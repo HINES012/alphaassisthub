@@ -2,44 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Alpha Assist Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Alpha Assist Hub</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; color: #333; }
-    header { background: #0b3d91; padding: 20px; color: white; text-align: center; }
-    section { max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    h1, h2 { color: #0b3d91; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin: 15px 0; }
-    a { color: #0b3d91; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; background: #eee; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+    .container { width: 90%; max-width: 1000px; margin: auto; }
+    header { background: #002c6c; color: #fff; padding: 20px 0; text-align: center; }
+    nav ul { list-style: none; padding: 0; margin: 10px 0; text-align: center; }
+    nav ul li { display: inline-block; margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    main { padding: 40px 20px; background: #fff; margin-top: 20px; border-radius: 8px; }
+    form { max-width: 600px; margin: auto; display: flex; flex-direction: column; }
+    input, textarea { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 12px; background: #0052cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #003f99; }
+    footer { background: #f2f2f2; text-align: center; padding: 20px 0; margin-top: 40px; }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Contact Alpha Assist Hub</h1>
-    <p>Let’s connect and help you move forward.</p>
+    <div class="container">
+      <h1>Contact Alpha Assist Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Business Inquiries</h2>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:info@alphaassistshub.org">info@alphaassistshub.org</a></li>
-      <li><strong>Leasing:</strong> <a href="mailto:leasing@alphaassistshub.org">leasing@alphaassistshub.org</a></li>
-      <li><strong>Recruitment:</strong> <a href="mailto:recruitment@alphaassistshub.org">recruitment@alphaassistshub.org</a></li>
-    </ul>
-
-    <h2>Phone</h2>
-    <p>(704) 555-9321</p>
-
-    <h2>Mailing Address</h2>
-    <p>Alpha Assist Hub<br>Charlotte, North Carolina<br>United States</p>
-  </section>
+  <main class="container">
+    <h2>Send Us a Message</h2>
+    <form action="mailto:leasing@alphaassistshub.org" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
 
   <footer>
-    &copy; 2025 Alpha Assist Hub. All rights reserved.
+    <div class="container">
+      <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
