@@ -2,112 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alpha Assist Hub – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f8fc;
-      color: #333;
-    }
-    header {
-      background: #2b6cb0;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-    h2 {
-      color: #2b6cb0;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    a {
-      color: #2b6cb0;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #2b6cb0;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-    }
-    .countdown {
-      font-size: 2em;
-      font-weight: bold;
-      color: #d35e6e;
-      margin: 30px 0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alpha Assist Hub | Smart Support Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🚀 Alpha Assist Hub</h1>
-    <p>We’re building something amazing! Stay tuned for our launch.</p>
+    <div class="container">
+      <h1>Alpha Assist Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>We're working hard behind the scenes!</h2>
-    <p>Our platform is on its way, and we can’t wait to share it with you. In the meantime, feel free to get in touch with us if you need any assistance or have questions!</p>
-    <p>For support or inquiries, email us:</p>
-    <p><a href="mailto:support@alphaassisthub.org">support@alphaassisthub.org</a></p>
-    
-    <div class="countdown">
-      <p>Our platform launches in:</p>
-      <p id="timer">00:00:00</p>
+  <section class="hero">
+    <div class="container">
+      <h2>Reliable Remote Support & Property Leasing Services</h2>
+      <p>Your trusted partner for professional assistance and virtual staffing.</p>
+      <a href="careers.html" class="btn">Join Our Team</a>
     </div>
-  </div>
+  </section>
+
+  <section class="features container">
+    <div class="feature">
+      <h3>Virtual Assistance</h3>
+      <p>Hire skilled remote professionals for your daily tasks, scheduling, and operations.</p>
+    </div>
+    <div class="feature">
+      <h3>Property Leasing</h3>
+      <p>List, coordinate, and manage your rental property applications remotely.</p>
+    </div>
+    <div class="feature">
+      <h3>Support Solutions</h3>
+      <p>Customer service and admin support tailored to your business needs.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Alpha Assist Hub. All Rights Reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script>
-    // Simple countdown timer script
-    var countDownDate = new Date("Jan 1, 2026 00:00:00").getTime();
-    var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-      
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
-      
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "Launched!";
-      }
-    }, 1000);
-  </script>
 </body>
 </html>
