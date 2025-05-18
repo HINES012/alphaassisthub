@@ -2,65 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alpha Assist Hub | Smart Support Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alpha Assist Hub connects top talent with trusted remote job opportunities.">
+  <title>Alpha Assist Hub | Remote Staffing Solutions</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-    .container { width: 90%; max-width: 1000px; margin: auto; }
-    header { background: #002c6c; color: #fff; padding: 20px 0; text-align: center; }
-    nav ul { list-style: none; padding: 0; margin: 10px 0; text-align: center; }
-    nav ul li { display: inline-block; margin: 0 15px; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-    .hero { background: #e9f0ff; padding: 60px 20px; text-align: center; }
-    .hero .btn { margin-top: 20px; padding: 12px 25px; background: #0052cc; color: white; text-decoration: none; border-radius: 4px; display: inline-block; }
-    .features { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 40px; }
-    .feature { flex: 1; min-width: 30%; margin: 15px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    footer { background: #f2f2f2; text-align: center; padding: 20px 0; margin-top: 40px; }
-    @media (max-width: 768px) { .features { flex-direction: column; } }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #00509e, #003366);
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .hero a {
+      padding: 12px 25px;
+      background: #ffc107;
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .services, .about, .contact {
+      background-color: white;
+      margin-bottom: 20px;
+    }
+
+    .services h3, .about h3, .contact h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 5px 0 0;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>Alpha Assist Hub</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Alpha Assist Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Reliable Remote Support & Property Leasing Services</h2>
-      <p>Your trusted partner for professional assistance and virtual staffing.</p>
-      <a href="careers.html" class="btn">Join Our Team</a>
-    </div>
+  <div class="hero">
+    <h2>Connecting Top Talent with Remote Careers</h2>
+    <p>We specialize in remote staffing solutions to help businesses scale and professionals thrive from anywhere.</p>
+    <a href="#">Apply Now</a>
+  </div>
+
+  <section class="about">
+    <h3>About Alpha Assist Hub</h3>
+    <p>Alpha Assist Hub is a U.S.-based staffing firm dedicated to placing skilled candidates in flexible, remote job roles. We believe in empowering talent and delivering exceptional value to our clients.</p>
   </section>
 
-  <section class="features container">
-    <div class="feature">
-      <h3>Virtual Assistance</h3>
-      <p>Hire skilled remote professionals for your daily tasks, scheduling, and operations.</p>
-    </div>
-    <div class="feature">
-      <h3>Property Leasing</h3>
-      <p>List, coordinate, and manage your rental property applications remotely.</p>
-    </div>
-    <div class="feature">
-      <h3>Support Solutions</h3>
-      <p>Customer service and admin support tailored to your business needs.</p>
-    </div>
+  <section class="services">
+    <h3>Our Services</h3>
+    <ul>
+      <li>Remote Administrative Support</li>
+      <li>Virtual Assistants</li>
+      <li>Customer Service Representatives</li>
+      <li>Remote HR & Recruitment</li>
+      <li>Back Office Operations</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@alphaassistshub.org</p>
+    <p>Phone: +1 (888) 555-1223</p>
+    <p>Charlotte, North Carolina, USA</p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
   </footer>
+
 </body>
 </html>
