@@ -2,165 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alpha Assist Hub connects top talent with trusted remote job opportunities.">
-  <title>Alpha Assist Hub | Remote Staffing Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alpha Assist Hub - Home</title>
   <style>
-    body {
+    /* Reset */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
+      background-color: #f9fafb;
       color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: #003366;
+    }
+    a:hover {
+      color: #00509e;
     }
 
+    /* Navigation */
     header {
       background-color: #003366;
-      color: white;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 24px;
+      color: white;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      cursor: default;
+      user-select: none;
     }
-
     nav a {
       color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
+      font-weight: 600;
+      margin-left: 30px;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00aaff;
     }
 
+    /* Hero Section */
     .hero {
-      background: linear-gradient(to right, #00509e, #003366);
+      background: linear-gradient(135deg, #00509e 0%, #003366 100%);
       color: white;
-      padding: 80px 40px;
+      padding: 100px 20px 80px;
       text-align: center;
     }
-
     .hero h2 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 48px;
+      font-weight: 800;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      letter-spacing: 1px;
+      line-height: 1.1;
     }
-
     .hero p {
       font-size: 20px;
       max-width: 600px;
-      margin: 0 auto 30px;
+      margin: 0 auto;
+      font-weight: 400;
+      opacity: 0.85;
     }
 
-    .hero a {
-      padding: 12px 25px;
-      background: #ffc107;
-      color: #003366;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+    /* Main Content */
+    main {
+      max-width: 960px;
+      margin: 60px auto 80px;
+      padding: 0 20px;
     }
-
-    section {
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    .services, .about, .contact {
-      background-color: white;
-      margin-bottom: 20px;
-    }
-
-    .services h3, .about h3, .contact h3 {
+    main h3 {
       font-size: 28px;
+      color: #003366;
       margin-bottom: 20px;
+      font-weight: 700;
     }
-
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .services li {
-      margin-bottom: 10px;
+    main p {
       font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
 
+    /* Footer */
     footer {
       background-color: #003366;
       color: white;
-      padding: 30px 40px;
+      padding: 40px 20px;
       text-align: center;
-    }
-
-    footer p {
-      margin: 5px;
       font-size: 14px;
+      letter-spacing: 0.5px;
+      user-select: none;
+    }
+    footer a {
+      color: #00aaff;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 28px;
-      }
-
-      nav {
-        display: flex;
+      header {
         flex-direction: column;
         align-items: flex-start;
       }
-
+      nav {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
       nav a {
-        margin: 5px 0 0;
+        margin: 0;
+        font-size: 15px;
+      }
+      .hero h2 {
+        font-size: 32px;
+      }
+      main h3 {
+        font-size: 22px;
+      }
+      main p {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Alpha Assist Hub</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Alpha Assist Hub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="careers.html">Careers</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <div class="hero">
-    <h2>Connecting Top Talent with Remote Careers</h2>
-    <p>We specialize in remote staffing solutions to help businesses scale and professionals thrive from anywhere.</p>
-    <a href="#">Apply Now</a>
-  </div>
+<section class="hero">
+  <h2>Remote Staffing and Rental Management Made Simple</h2>
+  <p>Your trusted partner in connecting talent and managing properties with ease and professionalism.</p>
+</section>
 
-  <section class="about">
-    <h3>About Alpha Assist Hub</h3>
-    <p>Alpha Assist Hub is a U.S.-based staffing firm dedicated to placing skilled candidates in flexible, remote job roles. We believe in empowering talent and delivering exceptional value to our clients.</p>
-  </section>
+<main>
+  <h3>Welcome to Alpha Assist Hub</h3>
+  <p>We specialize in providing premium remote staffing solutions and efficient rental property management services. Whether you're looking for qualified virtual assistants or verified tenants, our platform ensures reliability and professionalism every step of the way.</p>
+  <p>Browse our services, explore career opportunities, or get in touch to learn how we can assist your business.</p>
+</main>
 
-  <section class="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Remote Administrative Support</li>
-      <li>Virtual Assistants</li>
-      <li>Customer Service Representatives</li>
-      <li>Remote HR & Recruitment</li>
-      <li>Back Office Operations</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h3>Contact Us</h3>
-    <p>Email: info@alphaassistshub.org</p>
-    <p>Phone: +1 (888) 555-1223</p>
-    <p>Charlotte, North Carolina, USA</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-    <p>Privacy Policy | Terms of Service</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
+  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+</footer>
 
 </body>
 </html>
