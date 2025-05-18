@@ -2,53 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about Alpha Assist Hub, a leading provider of remote staffing solutions.">
   <title>About Us | Alpha Assist Hub</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-    .container { width: 90%; max-width: 1000px; margin: auto; }
-    header { background: #002c6c; color: #fff; padding: 20px 0; text-align: center; }
-    nav ul { list-style: none; padding: 0; margin: 10px 0; text-align: center; }
-    nav ul li { display: inline-block; margin: 0 15px; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-    main { padding: 40px 20px; background: #fff; margin-top: 20px; border-radius: 8px; }
-    footer { background: #f2f2f2; text-align: center; padding: 20px 0; margin-top: 40px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .page-banner {
+      background: linear-gradient(to right, #00509e, #003366);
+      color: white;
+      text-align: center;
+      padding: 60px 30px;
+    }
+
+    .page-banner h2 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .content {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+
+    .content h3 {
+      font-size: 28px;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .page-banner h2 {
+        font-size: 30px;
+      }
+
+      .content {
+        padding: 40px 20px;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>About Alpha Assist Hub</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Alpha Assist Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Services</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h2>Our Mission</h2>
-    <p>At Alpha Assist Hub, we provide reliable virtual staffing and remote assistance solutions for small businesses, entrepreneurs, and landlords. Whether you're managing a rental portfolio or need help running your company, we match you with skilled remote professionals to get the job done.</p>
+  <section class="page-banner">
+    <h2>About Alpha Assist Hub</h2>
+  </section>
 
-    <h2>What We Do</h2>
-    <ul>
-      <li>Remote administrative and customer support</li>
-      <li>Rental coordination and leasing services</li>
-      <li>Professional virtual assistants</li>
-    </ul>
+  <div class="content">
+    <h3>Who We Are</h3>
+    <p>Alpha Assist Hub is a forward-thinking remote staffing agency dedicated to bridging the gap between talented individuals and growing businesses. Our foundation is built on trust, integrity, and a deep commitment to supporting both our clients and candidates.</p>
 
-    <h2>Why Choose Us</h2>
-    <p>We are committed to delivering trustworthy, efficient, and confidential support for our clients worldwide. With a flexible staffing approach and a reputation for professionalism, Alpha Assist Hub helps you grow your operations remotely.</p>
-  </main>
+    <h3>Our Mission</h3>
+    <p>We aim to empower remote professionals by offering opportunities that align with their skills, values, and lifestyle. Our mission is to simplify the hiring process for companies seeking reliable, skilled, and remote-ready talent from across the globe.</p>
+
+    <h3>What We Do</h3>
+    <p>We specialize in placing qualified candidates in roles such as virtual assistants, administrative support, customer service, HR, and back-office operations. By leveraging technology and streamlined processes, we ensure a seamless recruitment experience for both employers and job seekers.</p>
+
+    <h3>Why Choose Us</h3>
+    <p>Alpha Assist Hub is not just a staffing agency — we're a long-term partner in your success. We provide personalized support, clear communication, and scalable hiring solutions tailored to your needs.</p>
+  </div>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
   </footer>
+
 </body>
 </html>
