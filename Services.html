@@ -2,21 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Services - Alpha Assist Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | Alpha Assist Hub</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9fbfd;
       color: #333;
-    }
-    a {
-      text-decoration: none;
-      color: #003366;
-    }
-    a:hover {
-      color: #007acc;
+      line-height: 1.6;
     }
     header {
       background-color: #003366;
@@ -24,6 +18,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
     header h1 {
       color: #fff;
@@ -32,23 +27,23 @@
     }
     nav a {
       color: #fff;
-      margin-left: 30px;
+      margin-left: 25px;
       font-weight: 600;
-      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s;
     }
     nav a:hover {
       color: #00c2ff;
     }
     .hero {
-      background: linear-gradient(135deg, #00509e, #003366);
-      color: #fff;
+      background: linear-gradient(135deg, #007acc, #003366);
+      color: white;
+      padding: 80px 20px;
       text-align: center;
-      padding: 70px 20px;
     }
     .hero h2 {
-      font-size: 38px;
+      font-size: 40px;
       margin-bottom: 10px;
-      font-weight: bold;
     }
     .hero p {
       font-size: 18px;
@@ -61,46 +56,36 @@
     }
     .section h3 {
       font-size: 28px;
+      margin-bottom: 25px;
       color: #003366;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-    .section p {
-      font-size: 18px;
-      color: #444;
-      margin-bottom: 20px;
-      line-height: 1.6;
+      text-align: center;
     }
     .service-box {
-      background-color: #fff;
+      background: white;
       border-left: 5px solid #007acc;
-      padding: 25px;
+      border-radius: 6px;
+      padding: 25px 30px;
       margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     .service-box h4 {
-      font-size: 22px;
-      color: #003366;
+      color: #007acc;
       margin-bottom: 10px;
     }
     .service-box p {
       font-size: 16px;
-      color: #555;
-    }
-    .contact-note {
-      margin-top: 40px;
-      font-size: 16px;
-      background-color: #eaf3fb;
-      padding: 20px;
-      border-left: 4px solid #007acc;
+      color: #444;
     }
     footer {
-      background-color: #003366;
-      color: #fff;
+      background: #003366;
+      color: white;
       text-align: center;
       padding: 40px 20px;
-      font-size: 14px;
       margin-top: 60px;
+    }
+    footer p {
+      font-size: 14px;
+      margin-bottom: 10px;
     }
     footer a {
       color: #00c2ff;
@@ -109,7 +94,6 @@
     footer a:hover {
       color: #fff;
     }
-
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -120,13 +104,6 @@
       }
       nav a {
         margin: 5px 15px 0 0;
-        font-size: 15px;
-      }
-      .hero h2 {
-        font-size: 30px;
-      }
-      .section h3 {
-        font-size: 24px;
       }
     }
   </style>
@@ -145,41 +122,48 @@
 </header>
 
 <section class="hero">
-  <h2>Our Services</h2>
-  <p>Dependable support across staffing, leasing, and remote admin assistance.</p>
+  <h2>What We Offer</h2>
+  <p>Smart solutions in remote staffing, onboarding, and flexible housing support.</p>
 </section>
 
 <section class="section">
-  <h3>What We Offer</h3>
+  <h3>Our Core Services</h3>
 
   <div class="service-box">
-    <h4>Remote Staffing Solutions</h4>
-    <p>We connect organizations with skilled professionals for virtual administrative support, customer service, and data handling — all managed remotely with performance tracking and verification.</p>
+    <h4>Remote Workforce Staffing</h4>
+    <p>
+      We specialize in connecting businesses with skilled remote professionals in areas such as IT support, virtual assistance, customer service, content moderation, and administrative operations. Our recruitment process is fast, compliant, and tailored to your business needs.
+    </p>
   </div>
 
   <div class="service-box">
-    <h4>Property Leasing Assistance</h4>
-    <p>Alpha Assist Hub supports property managers and renters with end-to-end virtual leasing coordination — including listing management, applicant verification, rental agreements, and remote onboarding.</p>
+    <h4>Virtual Onboarding & HR Integration</h4>
+    <p>
+      Our remote onboarding service ensures new hires are equipped with offer letters, hardware procurement instructions, verification forms, and compliance agreements. We handle secure delivery of onboarding kits and follow up to ensure productivity from day one.
+    </p>
   </div>
 
   <div class="service-box">
-    <h4>Document Handling & Verification</h4>
-    <p>Need help processing, reviewing, or verifying sensitive documents like lease applications, job offers, or compliance forms? Our secure support team can manage it efficiently.</p>
+    <h4>Rental Placement Assistance</h4>
+    <p>
+      Through our housing assistance program, we help qualified applicants secure rental spaces across the U.S., especially those relocating for work. Our team handles the documentation, background validation, and lease setup for smooth move-ins.
+    </p>
   </div>
 
   <div class="service-box">
-    <h4>Startup & Admin Support</h4>
-    <p>We assist small businesses and entrepreneurs with remote tasks like email scheduling, invoice preparation, HR coordination, and platform setup — freeing you to focus on scaling.</p>
-  </div>
-
-  <div class="contact-note">
-    <strong>Interested in working with us?</strong> Contact us at <a href="mailto:contact@alphaassistshub.org">contact@alphaassistshub.org</a> or visit our <a href="contact.html">Contact page</a> to schedule a consultation.
+    <h4>Employer Support & Vendor Coordination</h4>
+    <p>
+      Need tech devices for your new team? We coordinate with verified vendors to supply laptops, work tools, and secure platforms. Our clients can rely on streamlined logistics for timely delivery and setup — whether local or remote.
+    </p>
   </div>
 </section>
 
 <footer>
   <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a>
+  </p>
 </footer>
 
 </body>
