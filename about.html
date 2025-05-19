@@ -2,130 +2,232 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn more about Alpha Assist Hub, a leading provider of remote staffing solutions.">
-  <title>About Us | Alpha Assist Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Alpha Assist Hub</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f9;
+      background-color: #f4f6f8;
       color: #333;
     }
-
+    a {
+      text-decoration: none;
+      color: #003366;
+    }
+    a:hover {
+      color: #007acc;
+    }
     header {
       background-color: #003366;
-      color: white;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
+      color: #fff;
+      font-size: 28px;
       font-weight: bold;
     }
-
-    .page-banner {
-      background: linear-gradient(to right, #00509e, #003366);
-      color: white;
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #00c2ff;
+    }
+    .banner {
+      background: linear-gradient(135deg, #00509e, #003366);
+      color: #fff;
       text-align: center;
-      padding: 60px 30px;
+      padding: 70px 20px;
     }
-
-    .page-banner h2 {
-      margin: 0;
+    .banner h2 {
       font-size: 40px;
+      margin-bottom: 10px;
+      font-weight: 800;
     }
-
-    .content {
-      padding: 60px 40px;
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
+    .banner p {
+      font-size: 18px;
+      opacity: 0.9;
     }
-
-    .content h3 {
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .section h3 {
       font-size: 28px;
       color: #003366;
       margin-bottom: 20px;
+      font-weight: bold;
     }
-
-    .content p {
-      line-height: 1.7;
-      margin-bottom: 20px;
+    .section p {
       font-size: 18px;
+      color: #444;
+      margin-bottom: 20px;
+      line-height: 1.7;
     }
-
-    footer {
-      background-color: #003366;
-      color: white;
-      padding: 30px 40px;
-      text-align: center;
+    .core-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .value-card {
+      background-color: #fff;
+      border-left: 5px solid #007acc;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .value-card h4 {
+      font-size: 20px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    .value-card p {
+      font-size: 16px;
+      color: #555;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
       margin-top: 40px;
     }
-
-    footer p {
-      margin: 5px;
+    .team-member {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .team-member h5 {
+      font-size: 18px;
+      color: #003366;
+      margin-bottom: 5px;
+    }
+    .team-member span {
       font-size: 14px;
+      color: #666;
+    }
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #00c2ff;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
     }
 
     @media (max-width: 768px) {
-      .page-banner h2 {
-        font-size: 30px;
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-
-      .content {
-        padding: 40px 20px;
+      nav {
+        margin-top: 10px;
+      }
+      nav a {
+        margin: 5px 15px 0 0;
+        font-size: 15px;
+      }
+      .banner h2 {
+        font-size: 32px;
+      }
+      .section h3 {
+        font-size: 24px;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Alpha Assist Hub</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Services</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Alpha Assist Hub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="careers.html">Careers</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section class="page-banner">
-    <h2>About Alpha Assist Hub</h2>
-  </section>
+<section class="banner">
+  <h2>About Alpha Assist Hub</h2>
+  <p>Where staffing excellence meets dependable rental solutions.</p>
+</section>
 
-  <div class="content">
-    <h3>Who We Are</h3>
-    <p>Alpha Assist Hub is a forward-thinking remote staffing agency dedicated to bridging the gap between talented individuals and growing businesses. Our foundation is built on trust, integrity, and a deep commitment to supporting both our clients and candidates.</p>
+<section class="section">
+  <h3>Our Story</h3>
+  <p>Founded in Charlotte, NC, Alpha Assist Hub was created to bridge the gap between opportunity and access — whether that means staffing companies with exceptional remote professionals or helping families find the perfect rental. With roots in both workforce solutions and real estate support, we’ve evolved into a dual-service agency uniquely positioned to meet the growing demands of modern life and business.</p>
 
-    <h3>Our Mission</h3>
-    <p>We aim to empower remote professionals by offering opportunities that align with their skills, values, and lifestyle. Our mission is to simplify the hiring process for companies seeking reliable, skilled, and remote-ready talent from across the globe.</p>
+  <h3>Mission & Vision</h3>
+  <p><strong>Our mission</strong> is to simplify life for our clients by delivering trusted, affordable, and responsive solutions in both staffing and property support.</p>
+  <p><strong>Our vision</strong> is to be the nation’s most client-focused support agency — known for integrity, results, and long-term relationships.</p>
 
-    <h3>What We Do</h3>
-    <p>We specialize in placing qualified candidates in roles such as virtual assistants, administrative support, customer service, HR, and back-office operations. By leveraging technology and streamlined processes, we ensure a seamless recruitment experience for both employers and job seekers.</p>
-
-    <h3>Why Choose Us</h3>
-    <p>Alpha Assist Hub is not just a staffing agency — we're a long-term partner in your success. We provide personalized support, clear communication, and scalable hiring solutions tailored to your needs.</p>
+  <h3>Our Core Values</h3>
+  <div class="core-values">
+    <div class="value-card">
+      <h4>Trust</h4>
+      <p>We operate transparently and ethically in every transaction. Your peace of mind is our top priority.</p>
+    </div>
+    <div class="value-card">
+      <h4>Efficiency</h4>
+      <p>We respond fast, communicate clearly, and deliver quality without compromise.</p>
+    </div>
+    <div class="value-card">
+      <h4>Innovation</h4>
+      <p>We use modern tools and best practices to stay ahead in both staffing and real estate.</p>
+    </div>
+    <div class="value-card">
+      <h4>Empathy</h4>
+      <p>We’re not just a service — we’re your support team. We care about your success.</p>
+    </div>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-    <p>Privacy Policy | Terms of Service</p>
-  </footer>
+  <h3>Meet Our Leadership</h3>
+  <div class="team">
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Director" />
+      <h5>Richard Hines</h5>
+      <span>Company Director</span>
+    </div>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Manager" />
+      <h5>Latoya Greene</h5>
+      <span>Client Relations Manager</span>
+    </div>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Tech Lead" />
+      <h5>Michael Chen</h5>
+      <span>Technology & Compliance</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
+  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+</footer>
 
 </body>
 </html>
