@@ -3,120 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact Alpha Assist Hub for inquiries or support." />
-  <title>Contact Us | Alpha Assist Hub</title>
+  <title>Contact Us - Alpha Assist Hub</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f9;
+      background-color: #f4f8fc;
       color: #333;
     }
-
+    a {
+      text-decoration: none;
+      color: #003366;
+    }
+    a:hover {
+      color: #007acc;
+    }
     header {
       background-color: #003366;
-      color: white;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 24px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
     }
-
     nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    .page-banner {
-      background: linear-gradient(to right, #00509e, #003366);
-      color: white;
-      text-align: center;
-      padding: 60px 30px;
-    }
-
-    .page-banner h2 {
-      margin: 0;
-      font-size: 40px;
-    }
-
-    .content {
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: white;
-      padding: 40px 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
+      color: #fff;
+      margin-left: 30px;
       font-weight: 600;
-      margin-bottom: 6px;
-      margin-top: 20px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
       font-size: 16px;
-      resize: vertical;
     }
-
-    textarea {
-      min-height: 120px;
+    nav a:hover {
+      color: #00c2ff;
     }
-
-    button {
-      margin-top: 30px;
-      background-color: #ffc107;
-      color: #003366;
-      font-weight: bold;
-      padding: 14px;
-      border: none;
-      border-radius: 6px;
+    .hero {
+      background: linear-gradient(135deg, #00509e, #003366);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
       font-size: 18px;
+      opacity: 0.9;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .section h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #003366;
+    }
+    .contact-info {
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+    .contact-info p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .contact-info strong {
+      color: #00509e;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #003366;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    form button {
+      background-color: #007acc;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
-
-    button:hover {
-      background-color: #e0a800;
+    form button:hover {
+      background-color: #005f99;
     }
-
     footer {
       background-color: #003366;
-      color: white;
-      padding: 30px 40px;
+      color: #fff;
       text-align: center;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px;
+      padding: 40px 20px;
       font-size: 14px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #00c2ff;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
     }
 
-    @media (max-width: 600px) {
-      .page-banner h2 {
-        font-size: 30px;
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-      .content {
-        margin: 20px;
-        padding: 30px 20px;
+      nav {
+        margin-top: 10px;
+      }
+      nav a {
+        margin: 5px 15px 0 0;
+        font-size: 15px;
+      }
+      .hero h2 {
+        font-size: 30px;
       }
     }
   </style>
@@ -129,19 +151,29 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="careers.html">Careers</a>
-    <a href="#">Services</a>
+    <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="page-banner">
+<section class="hero">
   <h2>Contact Us</h2>
+  <p>We’re here to support you — reach out anytime.</p>
 </section>
 
-<div class="content">
-  <form action="mailto:leasing@alphaassistshub.org" method="POST" enctype="text/plain" onsubmit="return validateForm()">
+<section class="section">
+  <div class="contact-info">
+    <h3>How to Reach Us</h3>
+    <p><strong>Email:</strong> <a href="mailto:contact@alphaassistshub.org">contact@alphaassistshub.org</a></p>
+    <p><strong>Phone:</strong> (980) 555-0188</p>
+    <p><strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM (EST)</p>
+    <p><strong>Location:</strong> Charlotte, North Carolina (Remote Operations)</p>
+  </div>
+
+  <form action="mailto:contact@alphaassistshub.org" method="POST" enctype="text/plain">
+    <h3>Send Us a Message</h3>
     <label for="name">Full Name</label>
-    <input type="text" id="name" name="Full Name" required />
+    <input type="text" id="name" name="Name" required />
 
     <label for="email">Email Address</label>
     <input type="email" id="email" name="Email" required />
@@ -149,40 +181,17 @@
     <label for="subject">Subject</label>
     <input type="text" id="subject" name="Subject" required />
 
-    <label for="message">Message</label>
-    <textarea id="message" name="Message" required></textarea>
+    <label for="message">Your Message</label>
+    <textarea id="message" name="Message" rows="6" required></textarea>
 
-    <button type="submit">Send Message</button>
+    <button type="submit">Submit</button>
   </form>
-</div>
+</section>
 
 <footer>
   <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-  <p>Privacy Policy | Terms of Service</p>
+  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
 </footer>
-
-<script>
-  function validateForm() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const subject = document.getElementById('subject').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !subject || !message) {
-      alert('Please fill out all fields.');
-      return false;
-    }
-
-    // Simple email regex check
-    const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-    if (!emailPattern.test(email)) {
-      alert('Please enter a valid email address.');
-      return false;
-    }
-
-    return true;
-  }
-</script>
 
 </body>
 </html>
