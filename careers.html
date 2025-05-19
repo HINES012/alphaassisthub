@@ -3,124 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore career opportunities at Alpha Assist Hub. Join our team of remote professionals." />
-  <title>Careers | Alpha Assist Hub</title>
+  <title>Careers - Alpha Assist Hub</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f9;
+      background-color: #f4f6f8;
       color: #333;
     }
-
+    a {
+      text-decoration: none;
+      color: #003366;
+    }
+    a:hover {
+      color: #007acc;
+    }
     header {
       background-color: #003366;
-      color: white;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
+      color: #fff;
+      font-size: 28px;
       font-weight: bold;
     }
-
-    .page-banner {
-      background: linear-gradient(to right, #00509e, #003366);
-      color: white;
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #00c2ff;
+    }
+    .banner {
+      background: linear-gradient(135deg, #00509e, #003366);
+      color: #fff;
       text-align: center;
-      padding: 60px 30px;
+      padding: 70px 20px;
     }
-
-    .page-banner h2 {
-      margin: 0;
+    .banner h2 {
       font-size: 40px;
+      margin-bottom: 10px;
+      font-weight: 800;
     }
-
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: white;
-      padding: 40px 40px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
+    .banner p {
+      font-size: 18px;
+      opacity: 0.9;
     }
-
-    .job-listing {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 30px;
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
-
-    .job-listing:last-child {
-      border-bottom: none;
+    .section h3 {
+      font-size: 28px;
+      color: #003366;
+      margin-bottom: 20px;
+      font-weight: bold;
     }
-
-    .job-title {
-      font-size: 24px;
+    .section p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .job-listings {
+      margin-top: 30px;
+    }
+    .job-card {
+      background: #fff;
+      border-left: 5px solid #007acc;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .job-card h4 {
+      font-size: 20px;
       color: #003366;
       margin-bottom: 10px;
     }
-
-    .job-location {
-      font-style: italic;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .job-description {
+    .job-card p {
       font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 15px;
+      color: #555;
+      margin-bottom: 8px;
     }
-
-    .apply-btn {
-      background-color: #ffc107;
-      color: #003366;
-      padding: 12px 25px;
-      text-decoration: none;
+    .job-card a {
+      display: inline-block;
+      margin-top: 10px;
       font-weight: bold;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
     }
-
-    .apply-btn:hover {
-      background-color: #e0a800;
-    }
-
-    footer {
-      background-color: #003366;
-      color: white;
-      padding: 30px 40px;
-      text-align: center;
+    .why-join {
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
       margin-top: 40px;
     }
-
-    footer p {
-      margin: 5px;
+    .why-join h4 {
+      font-size: 24px;
+      color: #003366;
+      margin-bottom: 15px;
+    }
+    .why-join ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #444;
+    }
+    .why-join ul li {
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+    .apply-note {
+      margin-top: 40px;
+      font-size: 16px;
+      background-color: #eaf3fb;
+      padding: 20px;
+      border-left: 4px solid #007acc;
+    }
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
       font-size: 14px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #00c2ff;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
     }
 
     @media (max-width: 768px) {
-      .page-banner h2 {
-        font-size: 30px;
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-
-      .content {
-        padding: 30px 20px;
+      nav {
+        margin-top: 10px;
       }
-
-      .job-title {
-        font-size: 20px;
+      nav a {
+        margin: 5px 15px 0 0;
+        font-size: 15px;
+      }
+      .banner h2 {
+        font-size: 32px;
+      }
+      .section h3 {
+        font-size: 24px;
       }
     }
   </style>
@@ -133,47 +169,63 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="careers.html">Careers</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="page-banner">
+<section class="banner">
   <h2>Join Our Team</h2>
+  <p>Explore flexible and remote career opportunities at Alpha Assist Hub.</p>
 </section>
 
-<div class="content">
-  <div class="job-listing">
-    <h3 class="job-title">Remote Virtual Assistant</h3>
-    <p class="job-location">Location: Remote (USA Time Zones Preferred)</p>
-    <p class="job-description">
-      We are seeking a highly organized and proactive Virtual Assistant to support executives and teams with administrative tasks, scheduling, email management, and communication. Prior remote experience preferred.
-    </p>
-    <a href="your-application-form-link" class="apply-btn">Apply Now</a>
+<section class="section">
+  <h3>Current Openings</h3>
+
+  <div class="job-listings">
+    <div class="job-card">
+      <h4>Remote Administrative Assistant</h4>
+      <p><strong>Location:</strong> Remote (U.S. only)</p>
+      <p><strong>Type:</strong> Part-Time, Flexible Hours</p>
+      <p>Provide support to our property and staffing departments with data entry, scheduling, and email management.</p>
+      <a href="mailto:recruitment@alphaassistshub.org">Apply via Email</a>
+    </div>
+
+    <div class="job-card">
+      <h4>Customer Success Coordinator</h4>
+      <p><strong>Location:</strong> Remote</p>
+      <p><strong>Type:</strong> Full-Time</p>
+      <p>Engage with clients, coordinate onboarding, and ensure satisfaction throughout our service lifecycle.</p>
+      <a href="mailto:recruitment@alphaassistshub.org">Apply via Email</a>
+    </div>
+
+    <div class="job-card">
+      <h4>Remote Property Leasing Assistant</h4>
+      <p><strong>Location:</strong> Remote / Southeast U.S. preferred</p>
+      <p><strong>Type:</strong> Contract-Based</p>
+      <p>Assist prospective renters, verify documents, and manage lease processing remotely.</p>
+      <a href="mailto:recruitment@alphaassistshub.org">Apply via Email</a>
+    </div>
   </div>
 
-  <div class="job-listing">
-    <h3 class="job-title">Customer Service Representative</h3>
-    <p class="job-location">Location: Remote</p>
-    <p class="job-description">
-      Provide exceptional customer support via phone, email, and chat. Candidates must have excellent communication skills, a positive attitude, and ability to work independently.
-    </p>
-    <a href="your-application-form-link" class="apply-btn">Apply Now</a>
+  <div class="why-join">
+    <h4>Why Work with Alpha Assist Hub?</h4>
+    <ul>
+      <li>Flexible, fully remote work opportunities</li>
+      <li>Timely payments and contract transparency</li>
+      <li>Supportive leadership and responsive communication</li>
+      <li>Opportunities to grow into full-time roles</li>
+    </ul>
   </div>
 
-  <div class="job-listing">
-    <h3 class="job-title">Back Office Operations Specialist</h3>
-    <p class="job-location">Location: Remote</p>
-    <p class="job-description">
-      Manage data entry, document processing, and other back-office functions for our clients. Attention to detail and reliability are a must.
-    </p>
-    <a href="your-application-form-link" class="apply-btn">Apply Now</a>
+  <div class="apply-note">
+    <strong>To apply:</strong> Send your resume and a short cover note to <a href="mailto:recruitment@alphaassistshub.org">recruitment@alphaassistshub.org</a>. Qualified candidates may be asked to complete a brief verification and onboarding process.
   </div>
-</div>
+</section>
 
 <footer>
   <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-  <p>Privacy Policy | Terms of Service</p>
+  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
 </footer>
 
 </body>
