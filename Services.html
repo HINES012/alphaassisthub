@@ -3,93 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore services offered by Alpha Assist Hub including remote staffing and rental property management." />
-  <title>Services | Alpha Assist Hub</title>
+  <title>Our Services - Alpha Assist Hub</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f9;
+      background-color: #f9fbfd;
       color: #333;
     }
-
+    a {
+      text-decoration: none;
+      color: #003366;
+    }
+    a:hover {
+      color: #007acc;
+    }
     header {
       background-color: #003366;
-      color: white;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
+      color: #fff;
+      font-size: 28px;
       font-weight: bold;
     }
-
-    .page-banner {
-      background: linear-gradient(to right, #00509e, #003366);
-      color: white;
-      text-align: center;
-      padding: 60px 30px;
-    }
-
-    .page-banner h2 {
-      margin: 0;
-      font-size: 40px;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: white;
-      padding: 40px 40px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-
-    .service-section {
-      margin-bottom: 40px;
-    }
-
-    .service-section h3 {
-      color: #003366;
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .service-section p {
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      font-weight: 600;
       font-size: 16px;
+    }
+    nav a:hover {
+      color: #00c2ff;
+    }
+    .hero {
+      background: linear-gradient(135deg, #00509e, #003366);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .section h3 {
+      font-size: 28px;
+      color: #003366;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .section p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 20px;
       line-height: 1.6;
     }
-
+    .service-box {
+      background-color: #fff;
+      border-left: 5px solid #007acc;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    .service-box h4 {
+      font-size: 22px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    .service-box p {
+      font-size: 16px;
+      color: #555;
+    }
+    .contact-note {
+      margin-top: 40px;
+      font-size: 16px;
+      background-color: #eaf3fb;
+      padding: 20px;
+      border-left: 4px solid #007acc;
+    }
     footer {
       background-color: #003366;
-      color: white;
-      padding: 30px 40px;
+      color: #fff;
       text-align: center;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px;
+      padding: 40px 20px;
       font-size: 14px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #00c2ff;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
     }
 
     @media (max-width: 768px) {
-      .page-banner h2 {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      nav a {
+        margin: 5px 15px 0 0;
+        font-size: 15px;
+      }
+      .hero h2 {
         font-size: 30px;
       }
-
-      .content {
-        padding: 30px 20px;
+      .section h3 {
+        font-size: 24px;
       }
     }
   </style>
@@ -107,39 +144,42 @@
   </nav>
 </header>
 
-<section class="page-banner">
+<section class="hero">
   <h2>Our Services</h2>
+  <p>Dependable support across staffing, leasing, and remote admin assistance.</p>
 </section>
 
-<div class="content">
-  <section class="service-section">
-    <h3>Remote Staffing Solutions</h3>
-    <p>
-      Alpha Assist Hub specializes in providing high-quality remote staffing services tailored to meet the needs of businesses seeking virtual assistants, customer service representatives, back office operations specialists, and more. Our talent pool is carefully screened and trained to deliver reliable, professional support to help your business thrive.
-    </p>
-  </section>
+<section class="section">
+  <h3>What We Offer</h3>
 
-  <section class="service-section">
-    <h3>Rental Property Management</h3>
-    <p>
-      We offer comprehensive rental property management services designed to streamline leasing, tenant screening, and maintenance coordination. Whether you’re a landlord or property owner, Alpha Assist Hub handles all the essential tasks—from processing applications with thorough verification including ID and bank statement checks, to managing lease agreements and rent collection—ensuring your rental experience is hassle-free and professional.
-    </p>
-    <p>
-      Interested tenants are required to complete our detailed application forms prior to property inspections, helping us maintain security and efficiency.
-    </p>
-  </section>
+  <div class="service-box">
+    <h4>Remote Staffing Solutions</h4>
+    <p>We connect organizations with skilled professionals for virtual administrative support, customer service, and data handling — all managed remotely with performance tracking and verification.</p>
+  </div>
 
-  <section class="service-section">
-    <h3>Administrative Support</h3>
-    <p>
-      We also provide a range of administrative support services, including data entry, document processing, email management, and scheduling. Our experienced team works remotely to keep your business operations running smoothly and efficiently.
-    </p>
-  </section>
-</div>
+  <div class="service-box">
+    <h4>Property Leasing Assistance</h4>
+    <p>Alpha Assist Hub supports property managers and renters with end-to-end virtual leasing coordination — including listing management, applicant verification, rental agreements, and remote onboarding.</p>
+  </div>
+
+  <div class="service-box">
+    <h4>Document Handling & Verification</h4>
+    <p>Need help processing, reviewing, or verifying sensitive documents like lease applications, job offers, or compliance forms? Our secure support team can manage it efficiently.</p>
+  </div>
+
+  <div class="service-box">
+    <h4>Startup & Admin Support</h4>
+    <p>We assist small businesses and entrepreneurs with remote tasks like email scheduling, invoice preparation, HR coordination, and platform setup — freeing you to focus on scaling.</p>
+  </div>
+
+  <div class="contact-note">
+    <strong>Interested in working with us?</strong> Contact us at <a href="mailto:contact@alphaassistshub.org">contact@alphaassistshub.org</a> or visit our <a href="contact.html">Contact page</a> to schedule a consultation.
+  </div>
+</section>
 
 <footer>
   <p>&copy; 2025 Alpha Assist Hub. All rights reserved.</p>
-  <p>Privacy Policy | Terms of Service</p>
+  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
 </footer>
 
 </body>
